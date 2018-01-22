@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="galaga" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/galaga" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="/home/dominik/Pobrane/SFML-2.3.2/lib/libsfml-window.so" />
+					<Add library="/home/dominik/Pobrane/SFML-2.3.2/lib/libsfml-system.so" />
+					<Add library="../../Pobrane/SFML-2.3.2/lib/libsfml-graphics.so" />
+					<Add library="/home/dominik/Pobrane/SFML-2.3.2/lib/libsfml-audio.so" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/galaga" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-system" />
+					<Add library="sfml-window" />
+					<Add library="sfml-audio" />
+					<Add directory="sfml-graphics" />
+					<Add directory="sfml-window" />
+					<Add directory="sfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-g" />
+			<Add option="-fexceptions" />
+			<Add directory="/home/dominik/Pobrane/SFML-2.3.2/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-static-libgcc" />
+			<Add option="-static-libstdc++" />
+			<Add directory="../../Pobrane/SFML-2.3.2/lib" />
+		</Linker>
+		<Unit filename="include/Okno.h" />
+		<Unit filename="include/Pocisk.h" />
+		<Unit filename="include/Pocisk_naprowadzany.h" />
+		<Unit filename="include/Pocisk_przeciwnika.h" />
+		<Unit filename="include/Pocisk_skrecajacy.h" />
+		<Unit filename="include/Przeciwnik.h" />
+		<Unit filename="include/Przeciwnik_strzelajacy.h" />
+		<Unit filename="include/Przeciwnik_uciekajacy.h" />
+		<Unit filename="include/Przeszkoda.h" />
+		<Unit filename="include/Samolot.h" />
+		<Unit filename="include/Zapis.h" />
+		<Unit filename="include/Zderzenie.h" />
+		<Unit filename="include/wyjatek.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Okno.cpp" />
+		<Unit filename="src/Pocisk.cpp" />
+		<Unit filename="src/Pocisk_naprowadzany.cpp" />
+		<Unit filename="src/Pocisk_przeciwnika.cpp" />
+		<Unit filename="src/Pocisk_skrecajacy.cpp" />
+		<Unit filename="src/Przeciwnik.cpp" />
+		<Unit filename="src/Przeciwnik_strzelajacy.cpp" />
+		<Unit filename="src/Przeciwnik_uciekajacy.cpp" />
+		<Unit filename="src/Przeszkoda.cpp" />
+		<Unit filename="src/Samolot.cpp" />
+		<Unit filename="src/Zapis.cpp" />
+		<Unit filename="src/Zderzenie.cpp" />
+		<Unit filename="src/wyjatek.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
